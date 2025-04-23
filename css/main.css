@@ -1,0 +1,377 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+@font-face {
+  font-family: "Prata";
+  src: url("../fonts/Prata/Prata-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  font-family: "Arial", sans-serif;
+  background-color: #222222;
+  color: #ffffff;
+}
+
+p {
+  line-height: 1.5em;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  transition: all 0.3s ease;
+}
+h1 {
+  font-size: 80px;
+  font-weight: 100;
+  font-family: "Prata";
+  line-height: 1.2em;
+}
+
+h2 {
+  font-size: 54px;
+}
+h3 {
+  font-size: 50px;
+  font-family: Arial, sans-serif;
+  font-weight: 100;
+  line-height: 1.2em;
+}
+ul {
+  list-style-type: none;
+}
+
+/* header start */
+.container {
+  padding: 0 100px;
+}
+
+.header {
+  position: relative;
+  padding-top: 30px;
+}
+
+.header-top {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.header__logo {
+  font-size: 36px;
+  line-height: 1.5em;
+  letter-spacing: 0.03em;
+  width: 256px;
+  font-family: "Prata";
+}
+
+.navlink {
+  display: flex;
+  gap: 29px;
+  margin-left: 100px;
+}
+
+.navlink li {
+  text-transform: uppercase;
+  font-family: Arial, sans-serif;
+  font-style: italic;
+  font-weight: 100;
+  letter-spacing: 0.04em;
+}
+
+.header-bottom {
+  margin-top: 94px;
+  padding-top: 150px;
+}
+
+.header-bottom-right img {
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: -1;
+}
+
+.bottom__title_two {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.bottom__list li {
+  display: flex;
+  align-items: center;
+  font-size: 24px;
+  margin-bottom: 12px;
+  line-height: 1.1em;
+  &::before {
+    content: "";
+    display: block;
+    height: 37px;
+    width: 39px;
+    background-image: url("../img/icons/indo.svg");
+    background-position: initial;
+    background-size: initial;
+    background-repeat: initial;
+    margin-right: 17px;
+  }
+}
+
+.bottom__list span {
+  font-family: "Prata";
+  font-size: 40px;
+  margin-right: 15px;
+  line-height: 1.5em;
+}
+
+.button {
+  background: #ffffff;
+  color: #222;
+  font-size: 24px;
+  font-weight: bold;
+  letter-spacing: 0.04em;
+  cursor: pointer;
+}
+
+.header__button {
+  padding: 39.5px 50px;
+}
+/* header end */
+
+/* main start */
+
+.main {
+  background-color: #282829;
+  position: relative;
+}
+
+.main-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.main-list {
+  display: flex;
+  flex-direction: column;
+  height: 724px;
+  margin-top: 100px;
+  z-index: 1;
+  padding: 53px 53px 0 53px;
+  gap: 40px;
+}
+
+.main-list li {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  border-bottom: 1px solid #55565a;
+  padding-bottom: 20px;
+  padding-top: 20px;
+}
+
+.main-list li div {
+  content: "";
+  display: block;
+  height: 47px;
+  width: 58px;
+  background-image: url("../img/icons/group.svg");
+  background-position: initial;
+  background-size: initial;
+  background-repeat: initial;
+}
+
+.main-list li div p {
+  line-height: 1.4em;
+}
+
+.main-button {
+  padding: 32px 269px;
+}
+
+.right-side img {
+  position: absolute;
+  top: 100px;
+  right: 0;
+}
+
+.left-side img {
+  position: absolute;
+  top: 100px;
+  left: 0;
+}
+
+/* main end */
+
+/* section-form start */
+
+
+.section-form {
+  position:relative;
+  background: #fff;
+  background-image: url("../img/building-3.png");
+  display: block;
+  margin: 100px auto;
+  background-repeat: no-repeat;
+  background-position: right top;
+  background-size: contain;
+
+  border-radius: 30px;
+}
+
+.section-title {
+  font-family: "Prata";
+  color: #38535d;
+}
+
+.section-form {
+  display: flex;
+}
+
+.section-content {
+  padding: 72.5px 134px;
+}
+
+/* /////////////////// */
+
+input[type="text"],
+select {
+  width: 100%;
+  padding: 14.5px 38.16px;
+  margin: 13px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-size: 24px;
+}
+
+input[type="submit"] {
+  width: 100%;
+  background-color: #282829;
+  color: white;
+  padding-top: 32px;
+  padding-bottom: 32px;
+
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 24px;
+}
+
+input[type="submit"]:hover {
+  background-color: #868695;
+}
+
+input[type="checkbox"] {
+  width: 24px;
+  height: 24px;
+  margin-right: 16px;
+}
+
+.check-label {
+  display: flex;
+  align-items: center;
+  color: #55565a;
+  font-size: 19px;
+
+  line-height: 1.3em;
+
+  margin-top: 13px;
+  margin-bottom: 13px;
+}
+
+/* ///////////////////// */
+
+.section-form-right{
+  position:absolute;
+background-image: url('../img/girl.png');
+ height: 800px;
+ width:600px;
+ bottom:0;
+ right:100px;
+}
+
+/* section-form end */
+
+/* footer start */
+
+.footer-content{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom:53px;
+}
+
+.footer-navlink .navlink{
+  text-align: center;
+  margin-bottom: 64px;
+  align-items: center;
+  height: 80px;
+  justify-content: center;
+  border-top: 1px solid white;
+  border-bottom: 1px solid white;
+  margin-left:0;
+}
+
+.footer-logo{
+  display: flex;
+  flex-direction: column;
+  gap:54px;
+}
+
+.footer__logo{
+  font-size: 36px;
+  line-height: 1.5em;
+  letter-spacing: 0.03em;
+  font-family: "Prata";
+}
+
+.footer-social{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+ gap:63px
+
+}
+
+.footer__social{
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+  gap:32px;
+}
+
+
+.footer-social li a img{
+  content: '';
+  width: 32px;
+  height: 32px;
+  
+}
+
+
+.footer-order{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: end;
+  
+}
+
+
+.footer__copyright, .footer__policy, .footer__terms{
+  font-size: 20px;
+}
+
+.footer__button{
+  padding:32px 52px;
+
+}
+
+
+/* footer end*/
